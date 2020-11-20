@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageButton
+        android:id="@+id/exo_previous"
+        style="@style/ExoMediaButton.Previous"
+        android:tint="#FF00" />
+
+        <ImageButton
+        android:id="@+id/exo_rewind"
+        style="@style/ExoMediaButton.Rewind"
+        android:tint="#FF00" />
+
+        <ImageButton
+        android:id="@+id/exo_pressplay"
+        style="@style/ExoMediaButton.Play"
+        android:tint="#FF00" />
+
+        <ImageButton
+        android:id="@+id/exo_presspause"
+        style="@style/ExoMediaButton.Pause"
+        android:tint="#FF00" />
+
+        <ImageButton
+        android:id="@+id/exo_fastforward"
+        style="@style/ExoMediaButton.FastForward"
+        android:tint="#FF00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
